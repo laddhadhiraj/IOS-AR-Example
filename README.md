@@ -4,6 +4,7 @@ Example of the most important ARKit place , rotate, zoom object in real world.
 ## Usage
 - Need to tap on plus button at bottom
 - Select any object and tap on horizontal surface
+- You can rotate or zoom that object
 
 ## Requirements
 - iOS 12.0+

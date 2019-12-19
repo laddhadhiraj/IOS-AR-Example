@@ -18,7 +18,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     @IBOutlet var bottomView: UIView!
     @IBOutlet var addItemView: UIView!
     @IBOutlet var addItemCollectionView: UICollectionView!
-    @IBOutlet var saveButton : UIBarButtonItem!
+    //@IBOutlet var saveButton : UIBarButtonItem!
     var homeViewModel = HomeViewModel()
     
     
@@ -155,11 +155,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         // Enable Save button only when the mapping status is good and an object has been placed
         switch frame.worldMappingStatus {
-        case .extending, .mapped:
-            saveButton.isEnabled = true
+        case .extending, .mapped: break
+            //saveButton.isEnabled = true
             //saveButton.alpha = 1.0
-        default:
-            saveButton.isEnabled = false
+        default: break
+            //saveButton.isEnabled = false
             //saveButton.alpha = 0.5
         }
     }

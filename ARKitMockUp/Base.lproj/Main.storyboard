@@ -99,16 +99,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ARKit" id="JYa-vJ-quj">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="Jy6-Og-d7r">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="ARKit" id="JYa-vJ-quj"/>
                     <connections>
                         <outlet property="addItemCollectionView" destination="DeV-G8-0tV" id="z2U-dL-ezK"/>
                         <outlet property="addItemView" destination="sEN-eQ-KyE" id="yan-Ni-grw"/>
                         <outlet property="bottomView" destination="XZ4-rP-IoJ" id="MVt-5a-jjE"/>
-                        <outlet property="saveButton" destination="Jy6-Og-d7r" id="ISc-7I-aiI"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>

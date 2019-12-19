@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="saveFile" rowHeight="50" id="KGk-i7-Jjw" customClass="SaveFileCell" customModule="ARKitMockUp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-Ql-oKl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detection" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPz-5Q-xp1">
+                                <rect key="frame" x="8" y="5" width="304" height="39.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4N-yI-Qho">
+                                <rect key="frame" x="8" y="49" width="312" height="0.5"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="KAg-v3-wmt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BPz-5Q-xp1" secondAttribute="bottom" constant="5" id="CgQ-B2-Ajt"/>
+                            <constraint firstAttribute="trailing" secondItem="M4N-yI-Qho" secondAttribute="trailing" id="HWk-vj-Z12"/>
+                            <constraint firstItem="BPz-5Q-xp1" firstAttribute="leading" secondItem="Bur-Ql-oKl" secondAttribute="leading" constant="8" id="Q6t-VJ-1MA"/>
+                            <constraint firstItem="BPz-5Q-xp1" firstAttribute="centerY" secondItem="Bur-Ql-oKl" secondAttribute="centerY" id="eBA-jR-rCc"/>
+                            <constraint firstItem="BPz-5Q-xp1" firstAttribute="top" secondItem="Bur-Ql-oKl" secondAttribute="top" constant="5" id="gzA-AE-trp"/>
+                            <constraint firstAttribute="trailing" secondItem="BPz-5Q-xp1" secondAttribute="trailing" constant="8" id="l3I-1H-5Rh"/>
+                            <constraint firstItem="M4N-yI-Qho" firstAttribute="leading" secondItem="BPz-5Q-xp1" secondAttribute="leading" id="uf5-qs-ydC"/>
+                            <constraint firstAttribute="bottom" secondItem="M4N-yI-Qho" secondAttribute="bottom" id="yz8-4p-eeq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Bur-Ql-oKl" secondAttribute="trailing" id="6kM-XL-vAx"/>
+                    <constraint firstAttribute="bottom" secondItem="Bur-Ql-oKl" secondAttribute="bottom" id="BSK-OC-Sfn"/>
+                    <constraint firstItem="Bur-Ql-oKl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CDR-lm-lKc"/>
+                    <constraint firstItem="Bur-Ql-oKl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tkg-hZ-04a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLbl" destination="BPz-5Q-xp1" id="0go-Xu-Egg"/>
+            </connections>
+            <point key="canvasLocation" x="25.600000000000001" y="104.34782608695653"/>
+        </tableViewCell>
+    </objects>
+</document>
